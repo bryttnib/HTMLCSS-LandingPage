@@ -238,6 +238,7 @@ section {display: flex;}
   z-index: 1;
 }
 footer {
+  display: flex;
   flex-wrap: wrap;
   position: relative;
   z-index: 0;
@@ -257,7 +258,8 @@ footer:after {
 }
 .lists {
   flex: 0 0 75%;
-  left/right: 15px;
+  left: 15px;
+  right: 15px;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -272,6 +274,8 @@ footer a {
   text-transform: uppercase;
   font-size: 12px;
   padding: 0 0 4px;
+}
+footer a:hover {
   text-decoration: underline;
 }
 .social ul li {
@@ -281,7 +285,8 @@ footer a {
   display: block;
   width: 23px;
   height: 23px;
-  background: 23px 23px center;
+  background-size: 23px 23px;
+  background-position: center;
 }
 .twitter {
   background-image: url('../img/twitter.svg');
@@ -322,6 +327,8 @@ footer a {
   padding: 40px 0;
   color: #e5e5e5;
   font-size: 16px;
+}
+.ps img {
   max-width: 230px;
 }
 .demo {
@@ -333,7 +340,7 @@ footer a {
   width: 100%;
   height: 1px;
   margin: 30px 0;
-  background: linear-gradient(to right, #f05a28 0, #e80a89 100%);
+  background: linear-gradient(to right,#f05a28 0,#e80a89 100%);
 }
 .copyright {
   flex: 0 0 75%;
